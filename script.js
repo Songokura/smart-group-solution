@@ -91,7 +91,7 @@ var EN = {
   "b4.t":"Merchandise and corporate gifts","b4.s":"Gift sets for partners and staff with your logo.",
   "b5.t":"Branded pastry","b5.s":"Cakes, gingerbread, macarons and sweets with a logo.",
   "b6.t":"Corporate boxes","b6.s":"Nuts, sweets, champagne - assembled and delivered nationwide.",
-  "alt.b1":"Press wall with a branded banner","alt.b2":"Entrance decorated with balloons","alt.b4":"Gift merchandise in packaging with a ribbon","alt.b5":"Cake with the client's logo","alt.b6":"Corporate box",
+  "alt.b1":"Press wall with a branded banner","alt.b2":"Entrance decorated with balloons","alt.b3":"Menu card on a plate in a banquet setting","alt.b4":"Gift merchandise in packaging with a ribbon","alt.b5":"Cake with the client's logo","alt.b6":"Corporate box",
   "ph.poli":"Photo: print and wayfinding","ph.kofe":"Photo: coffee machine and barista","ph.kouch":"Photo: coaches and practices",
   "r.k":"Rentals and services","r.t":"Everything for the venue in one call",
   "r.lead":"Take items separately or as part of an event. We deliver, set up, service and collect.",

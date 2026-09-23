@@ -175,7 +175,7 @@ html.no-plate .plate::after{display:none}
   transform:translateY(calc(var(--dy) * (1 - var(--f)) - 58svh * var(--stay)));opacity:calc(1 - 1.35 * var(--stay));will-change:transform,opacity}
 .dome::before{content:"";position:absolute;left:17%;top:10%;width:28%;height:40%;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,255,255,.3),rgba(255,255,255,0) 70%)}
 .dome::after{content:"";position:absolute;left:-5%;right:-5%;bottom:-2px;height:3px;border-radius:2px;background:var(--terra);box-shadow:0 0 18px rgba(163,47,34,.65)}
-.knob{position:absolute;left:50%;top:-13px;width:24px;height:24px;border-radius:50%;transform:translateX(-50%);background:radial-gradient(circle at 36% 30%,#F3DED6 0%,var(--terra) 55%,#5F1A12 100%);box-shadow:0 4px 12px rgba(0,0,0,.4)}
+.knob{position:absolute;left:50%;top:-29px;width:24px;height:24px;border-radius:50%;transform:translateX(-50%);background:radial-gradient(circle at 36% 30%,#F3DED6 0%,var(--terra) 55%,#5F1A12 100%);box-shadow:0 4px 12px rgba(0,0,0,.4)}
 .knob::after{content:"";position:absolute;left:50%;top:22px;width:8px;height:8px;transform:translateX(-50%);background:var(--terra);border-radius:0 0 4px 4px}
 .steam{position:absolute;z-index:3;left:50%;top:-30svh;width:240px;height:calc(var(--domeh) + 30svh + 22px);transform:translateX(-50%) translateY(calc(-24svh * var(--stay)));opacity:calc(2.8 * var(--stay) * (1 - var(--stay)));pointer-events:none}
 .steam path{fill:none;stroke:rgba(255,255,255,.75);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:520;stroke-dashoffset:calc(520 * (1 - var(--stay)))}
