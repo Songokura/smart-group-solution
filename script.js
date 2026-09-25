@@ -100,7 +100,7 @@ var EN = {
   "r3.t":"Coffee machine with barista","r3.s":"Our machine, our barista, beans and milk - all included.",
   "r4.t":"Hosts and artists","r4.s":"Hosts, musicians, artists, entertainers, DJs.",
   "r5.t":"Coaches and practices","r5.s":"Yoga, nutritionists, psychologists, business mentors, art therapy.",
-  "alt.r1":"Tables and chairs at an outdoor event","alt.r2":"Stage with sound and lighting","alt.r4":"Musician on stage",
+  "alt.r1":"Tables and chairs at an outdoor event","alt.r2":"Stage with sound and lighting","alt.r3":"Barista at the coffee machine of a mobile coffee station","alt.r4":"Musician on stage",
   "g.k":"Coverage","g.t":"We work all over Kazakhstan",
   "g.lead":"Own logistics and 40+ trusted partners. Capitals, regional centres and small towns - yes, we will come to Ridder too.",
   "g.h":"h","g.f1":"to deliver anything from one end of the country to the other","g.f2":"documents from city to city",
