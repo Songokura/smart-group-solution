@@ -440,6 +440,8 @@ html.js .grid.rv,html.js .dirs.rv,html.js .facts.rv,html.js .steps.rv,html.js .f
 .sbtn:disabled:hover{background:rgba(26,21,19,.8)}
 .sbtn[hidden]{display:none}
 .strip-gal + .sbtn,.strip-team + .sbtn{top:calc(50% - 10px)}
+.strip-case figure{height:min(460px,64vh);max-width:86vw}
+.strip-case video,.strip-case img{display:block;width:100%;height:calc(100% - 21px);object-fit:cover;border-radius:50% 50% 14px 14px / 30% 30% 14px 14px;background:var(--dark)}
 .sec-team{padding-top:48px}
 .gal-ig{margin-top:26px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
 .nick{font:500 12px/1 var(--fm);letter-spacing:.06em;color:var(--mute)}

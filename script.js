@@ -80,7 +80,7 @@ var EN = {
   "e6.t":"Office and store openings","e6.s":"Entrance decor, buffet, host, photo zone, guest gifts.",
   "e7.t":"Festivals","e7.s":"Tents, stage, food zones, bars and logistics at any venue.",
   "e8.t":"Your own format?","e8.s":"Describe the task - we will put together a programme and a quote the same day.","e8.b":"Message us",
-  "alt.e1":"Team tasting dishes at a team-building event","alt.e2":"Guest with a dessert at a masterclass","alt.e3":"Conference: hall with guests",
+  "alt.e1":"Team tasting dishes at a team-building event","alt.e2":"Cooking masterclass participants making a salad","alt.e3":"Conference: hall with guests",
   "alt.e4":"Table set for an outdoor gala dinner","alt.e5":"Corporate party stage with lighting","alt.e6":"Store entrance decorated for an opening","alt.e7":"Festival tent in the evening",
   "b.k":"Event branding","b.t":"Your brand in every detail",
   "b.lead":"Press walls, stages, wayfinding, print, merchandise and even logo cakes. All in the client's corporate style.",
@@ -124,6 +124,15 @@ var EN = {
   "ga.k":"Gallery","ga.t":"What it looks like on site",
   "ga.1":"Buffet","ga.2":"Bruschetta","ga.3":"Mobile bar","ga.4":"Canapés","ga.5":"Outdoor event","ga.6":"Coffee break","ga.7":"Social media shoot","ga.8":"Desserts","ga.9":"Branding","ga.10":"Masterclass",
   "ga.ig":"More events on Instagram",
+  "mk.k":"Case","mk.t":"Milka cakes in 18 cities - at the same time",
+  "mk.lead":"Branded cakes with the campaign design and coffee machines for guests. Every venue received its order at the same hour.",
+  "mk.b":"Discuss a multi-city project",
+  "mk.milka-tort":"Campaign design on a cake","mk.milka-nadpis":"Hand-piped lettering","mk.milka-tort-verh":"Artwork in cream","mk.milka-vruchenie":"Handover on site",
+  "mk.milka-kofe":"Coffee machines for guests","mk.milka-tort-yagody":"Berry version","mk.milka-ozhidanie":"Expectation vs result","mk.milka-komanda":"Everyone in the shot",
+  "alt.milka-tort":"Branded Milka cake close-up","alt.milka-nadpis":"Pastry chef piping lettering on a cake","alt.milka-tort-verh":"Milka cake with campaign design, top view",
+  "alt.milka-vruchenie":"Client team holding a Milka cake","alt.milka-kofe":"Coffee machines at an outdoor venue","alt.milka-tort-yagody":"Milka cake with strawberries and chocolate",
+  "alt.milka-ozhidanie":"Clip: the cake the client expected and the one they got","alt.milka-komanda":"Client staff on site with a Milka cake",
+  "alt.r5":"Nutritionist speaking to a group in an office",
   "alt.g1":"Buffet table","alt.g2":"Bruschetta close-up","alt.g3":"Champagne tower","alt.g4":"Tartlets and canapés","alt.g5":"Long table outdoors",
   "alt.g6":"Guests taking snacks","alt.g7":"Filming a buffet on a phone","alt.g8":"Dessert in a tartlet","alt.g9":"Press wall at the venue","alt.g10":"Guest with a dessert",
   "q.t":"Frequently asked questions",
@@ -465,6 +474,27 @@ document.querySelectorAll(".strip-wrap").forEach(function(w){
 });
 function stripsState(){ strips.forEach(function(f){ f(); }); }
 addEventListener("load", stripsState);
+
+/* ---------------- РОЛИКИ КЕЙСА: играют, только пока видны ----------------
+   src ставится при входе в кадр и снимается при выходе - до секции ничего не грузится. */
+var vids = [].slice.call(document.querySelectorAll("video[data-src]"));
+if (vids.length && HAS_IO && !RED) {
+  var vio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var v = e.target, f = v.parentNode;
+      if (e.isIntersecting) {
+        if (!v.getAttribute("src")) { v.src = v.dataset.src; }
+        var pr = v.play(); if (pr && pr.catch) pr.catch(function(){});
+      } else if (v.getAttribute("src")) {
+        v.pause(); v.removeAttribute("src"); v.load(); f.classList.remove("is-live");
+      }
+    });
+  }, {threshold:.45});
+  vids.forEach(function(v){
+    v.addEventListener("playing", function(){ v.parentNode.classList.add("is-live"); });
+    vio.observe(v);
+  });
+}
 
 /* ---------------- ФОРМА → WhatsApp ---------------- */
 var FORM_T = {
