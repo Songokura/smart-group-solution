@@ -429,7 +429,7 @@ html.js .grid.rv,html.js .dirs.rv,html.js .facts.rv,html.js .steps.rv,html.js .f
 .strip img{width:100%;height:100%;object-fit:cover;border-radius:50% 50% 14px 14px / 40% 40% 14px 14px}
 .strip-team figure{width:min(300px,68vw);aspect-ratio:3/4}
 .strip-gal figure{width:min(420px,78vw)}
-.strip-gal img{aspect-ratio:4/3;border-radius:50% 50% 14px 14px / 34% 34% 14px 14px}
+.strip-gal img,.strip-gal video{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:4/3;border-radius:50% 50% 14px 14px / 34% 34% 14px 14px}
 .strip figcaption{margin-top:10px;font:500 11px/1 var(--fm);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);text-align:center}
 .sbtn{position:absolute;top:50%;z-index:3;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:rgba(26,21,19,.8);color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:background .25s,opacity .25s}
 .sbtn svg{display:block}
@@ -526,3 +526,5 @@ html.js .grid.rv,html.js .dirs.rv,html.js .facts.rv,html.js .steps.rv,html.js .f
   .media img,.btn,.nav a::after,.more svg{transition:none}
   .card:hover .media::after,.dir:hover .media::after{animation:none;opacity:0}
 }
+
+.sec-dark .strip figcaption{color:rgba(255,255,255,.6)}
