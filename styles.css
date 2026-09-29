@@ -354,6 +354,7 @@ html.js .grid.rv,html.js .dirs.rv,html.js .facts.rv,html.js .steps.rv,html.js .f
 .pcol li span{order:1;white-space:nowrap}
 .pcol li::after{content:"";order:2;flex:1;border-bottom:1px dotted #CFC4B4;transform:translateY(-4px)}
 .pcol li b{order:3;font:500 18px/1 var(--fm);color:var(--ink);white-space:nowrap}
+.pcol li b .from{font:400 12px/1 var(--ft);font-style:normal;color:var(--mute)}
 .pcol li b::after{content:" ₸";font-size:12px;color:var(--terra)}
 .pcol .btn{margin-top:auto;padding-top:0}
 .pcol ul + .btn{margin-top:22px}

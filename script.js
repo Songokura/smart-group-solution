@@ -66,7 +66,7 @@ var EN = {
   "alt.s1":"Canapés on a tray for a coffee break","alt.s2":"Buffet line close-up","alt.s3":"Banquet table setting","alt.s4":"Bruschetta on a wooden board",
   "alt.s5":"Gift box and flowers","alt.s6":"Branded gingerbread in packaging","alt.s7":"Champagne glass tower","alt.s8":"Chef cooking on site",
   "p.k":"Prices","p.t":"Price per guest","p.lead":"Starting prices in tenge per person. Exact quote after a short brief, same day.",
-  "p.c1":"Buffet reception","p.c2":"Coffee break","p.c3":"Banquet","p.std":"Standard","p.biz":"Business","p.prem":"Premium","p.sets":"Ready sets","p.calc":"Get a quote",
+  "p.c1":"Buffet reception","p.c2":"Coffee break","p.c3":"Banquet","p.std":"Standard","p.biz":"Business","p.prem":"Premium","p.sets":"Ready sets","p.calc":"Get a quote","p.from":"from",
   "p.c4":"Turnkey event","p.c4s":"Venue, menu, decor, programme, logistics to any city. Quote on request.","p.c4b":"quote on request","p.c4btn":"Discuss an event",
   "p.note":"Bank transfer, contract and closing documents for legal entities.",
   "e.k":"Turnkey events","e.t":"From the idea to the last guest",
